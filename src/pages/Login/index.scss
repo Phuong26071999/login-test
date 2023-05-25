@@ -1,0 +1,202 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    .box-img {
+        padding: 10px;
+        flex: 1;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .box-form {
+        flex: 1.5;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cover-form {
+            padding: 30px;
+            .title-group {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                gap: 1.5rem;
+                padding-bottom: 50px;
+                .main-title {
+                    span {
+                        font-size: 30px;
+                        font-weight: 600;
+                    }
+                }
+                .sub-title {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 15px;
+                    font-weight: 400;
+                    a {
+                        color: #000;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .form {
+                .cover-input {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding-bottom: 20px;
+                    span {
+                        font-size: 15px;
+                    }
+                    & .MuiOutlinedInput-root {
+                        &.Mui-focused fieldset {
+                          border-color: black;
+                        }
+                      }
+                }
+                .forgot-password {
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 50px;
+                    a {
+                        color: black
+                    }
+                }
+                .btn-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    .btn-signIn {
+                        background: #222;
+                        color: white;
+                        text-transform: none;
+                        height: 50px;
+                        font-weight: 600;
+                        &:hover {
+                            background: #222222da;
+                        }
+                    }
+                    .btn-google {
+                        background: #f8f8f8;
+                        color: #000;
+                        gap: 0.5rem;
+                        text-transform: none;
+                        height: 50px;
+                        font-weight: 600;
+                        img {
+                            width: 25px;
+                        }
+                        &:hover {
+                            background: #f8f8f8d5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        .box-form {
+            .cover-form {
+                padding: 30px;
+                .title-group {
+                    .main-title {
+                        span {
+                            font-size: 28px;
+                        }
+                    }
+                    .sub-title {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .container {
+        .box-form {
+            .cover-form {
+                padding: 30px;
+                .title-group {
+                    .main-title {
+                        span {
+                            font-size: 25px;
+                        }
+                    }
+                    .sub-title {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        .box-img {
+            display: none;
+        }
+        .box-form {
+            .cover-form {
+                .title-group {
+                    .main-title {
+                        span {
+                            font-size: 25px;
+                        }
+                    }
+                    .sub-title {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 617px) {
+    .container {
+        .box-form {
+            .cover-form {
+                padding: 0px;
+                .title-group {
+                    .main-title {
+                        span {
+                            font-size: 22px;
+                        }
+                    }
+                    .sub-title {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        .box-form {
+            .cover-form {
+                padding: 0px;
+                .title-group {
+                    .main-title {
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                    .sub-title {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
